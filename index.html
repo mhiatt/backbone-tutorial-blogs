@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backbone Tutorial Blogs</title>
+
+    <!-- include css files -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Backbone Tutorial Blogs</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td><input class="form-control author-input" type="text"></td>
+            <td><input class="form-control title-input" type="text"></td>
+            <td><input class="form-control url-input" type="text"></td>
+            <td><button class="btn btn-primary add-blog">Add</button></td>
+          </tr>
+        </thead>
+        <tbody class="blogs-list">
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/template" class="blogs-list-template">
+      <td><span class="author"><%= author %></span></td>
+      <td><span class="title"><%= title %></span></td>
+      <td><span class="url"><%= url %></span></td>
+      <td>
+        <button class="btn btn-warning edit-blog">Edit</button>&nbsp;
+        <button class="btn btn-danger delete-blog">Delete</button>&nbsp;
+        <button class="btn btn-success update-blog" style="display: none;">Update</button>&nbsp;
+        <button class="btn btn-danger cancel" style="display: none;">Cancel</button>&nbsp;
+      </td>
+    </script>
+
+    <!-- include js files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
