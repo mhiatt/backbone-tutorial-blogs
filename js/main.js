@@ -111,7 +111,6 @@ $(function() {
     $('.title-input').val('');
     $('.url-input').val('');
 
-    console.log(blog.toJSON());
     blogs.add(blog);
   });
 
